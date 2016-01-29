@@ -1,7 +1,7 @@
 describe ("Pizza", function() {
   it("will generate a price based on size", function() {
-    var testPizza = new Pizza(true);
-    expect(testPizza.sizePizza).to.equal(true);
+    var testPizza = new Pizza("Medium");
+    expect(testPizza.price()).to.equal(15);
   });
 
   it("will modify price based on number of toppings selected", function(){

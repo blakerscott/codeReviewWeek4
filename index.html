@@ -1,15 +1,50 @@
-<!DOCTYPE html>
+
 <html>
   <head>
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="css/styles.css" media="screen">
-    <script src="js/jquery-1.12.0.js"></script>
-    <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>
-    </title>
+    <title>Blake's Pizza Joint</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    </head>
   </head>
   <body>
+    <div class="container">
+      <div class="col-md-6">
+        <form id="pizzaSelect">
+          <h4>Select a size:</h4>
+          <select class="form-control" id="size">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>s
+          </select>
 
+          <h4>Select toppings:</h4>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="1"> Extra Cheese
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="1"> Pepperoni
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Mushrooms
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Black Olives
+          </label>
+
+          <button type="submit" class="btn btn-success">Place your Order</button>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Price:</h3>
+        <ul id="pizzaPrice">
+
+        </ul>
+      </div>
+
+    </div>
   </body>
 </html>
