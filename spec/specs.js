@@ -5,7 +5,7 @@ describe ("Pizza", function() {
   });
 
   it("will modify price based on number of toppings selected", function(){
-    var testTopping = new Pizza("Large", 3);
-    expect(testTopping.price()).to.equal(18);
+    var testPizza = new Pizza("Large", ["Extra Cheese","Pineapple","Mushrooms"]);
+    expect(testPizza.price()).to.equal(20);
   });
 });
