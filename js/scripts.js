@@ -4,6 +4,15 @@ function Pizza(sizePizza, topping) {
 
 }
 
+
+var resetFields = function() {
+  $("select#size").val("");
+  $("input.toppingSelect").clear;
+  $('input.toppingSelect').not(this).toppingSelect({checked: this.checked});
+}
+
+
+
 Pizza.prototype.price = function() {
   var Price = 10;
 
@@ -39,6 +48,7 @@ $(document).ready(function() {
     var newPizza = new Pizza(inputtedSize, inputtedTopping);
     console.log("Pizza Object: ", newPizza);
     $("ul#pizzaCost").append("<p>$" + newPizza.price() +".00</p>");
-
+    resetFields();
     });
+
   });
