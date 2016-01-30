@@ -1,7 +1,5 @@
 # Pizza Price Generator
 
-#### _{Brief description of application}, {Date of current version}_
-
 #### By Blake Scott
 
 ## Link
