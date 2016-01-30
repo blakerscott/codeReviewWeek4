@@ -1,3 +1,25 @@
 .jumbotron {
+  font-family: 'Gentium Book Basic', serif;
   text-align: center;
+  padding-bottom: 0px;
+  background-color: #1a75ff;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 5%
+}
+body {
+  background-color: #cce5ff
+}
+.checkbox {
+  margin-left: 4%;
+}
+
+#button {
+  margin-left: 2%
+}
+#selecttoppings {
+  margin-left: 2%
 }

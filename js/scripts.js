@@ -47,7 +47,7 @@ $(document).ready(function() {
     });
     var newPizza = new Pizza(inputtedSize, inputtedTopping);
     console.log("Pizza Object: ", newPizza);
-    $("ul#pizzaCost").append("<p>$" + newPizza.price() +".00</p>");
+    $("ul#pizzaCost").append("<li>$" + newPizza.price() +".00</li>");
     resetFields();
     });
 

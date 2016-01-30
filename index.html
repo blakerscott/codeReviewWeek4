@@ -7,55 +7,68 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400italic' rel='stylesheet' type='text/css'>
     </head>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Blake's Pizza Pies</h1>
+        <h1>Blake's House of Pizza</h1>
+        <img src=http://cdn2.bigcommerce.com/server4400/fxr3rgr2/product_images/uploaded_images/printhog-pizza.png>
       </div>
-      <div class="col-md-6">
+      <div class=container>
         <form id="pizzaSelect">
-          <h4>Select a size:</h4>
-          <select class="form-control" id="size">
-            <option value="Small">Small</option>
-            <option value="Medium">Medium</option>
-            <option value="Large">Large</option>s
-          </select>
-
-          <h4>Select toppings:</h4>
-        <div>
-              <label class="checkbox-inline">
-                <input type="checkbox" class="toppingSelect" value="Extra Cheese"> Extra Cheese
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" class="toppingSelect" value="Pepperoni"> Pepperoni
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" class="toppingSelect" value="Mushrooms"> Mushrooms
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" class="toppingSelect" value="Black Olives"> Black Olives
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" class="toppingSelect" value="Pineapple"> Pineapple
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" class="toppingSelect" value="Garlic"> Garlic
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" class="toppingSelect" value="Roma Tomatoes"> Roma Tomatoes
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" class="toppingSelect" value="Basil"> Basil
-              </label>
+        <div class="row">
+          <div class="col-xs-12">
+            
+              <h4>Select a size:</h4>
+              <select class="form-control" id="size">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>s
+              </select>
             </div>
-            <button type="submit" class="btn btn-success">Place your Order</button>
-          </form>
         </div>
+        </div>
+        <div class=container>
+          <div class="row">
+              <h4 id="selecttoppings" >Select toppings:</h4>
+                <div class="col-xs-12">
+                <label class="checkbox">
+                  <input type="checkbox" class="toppingSelect" value="Extra Cheese"> Extra Cheese
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" class="toppingSelect" value="Pepperoni"> Pepperoni
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" class="toppingSelect" value="Mushrooms"> Mushrooms
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" class="toppingSelect" value="Black Olives"> Black Olives
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" class="toppingSelect" value="Pineapple"> Pineapple
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" class="toppingSelect" value="Garlic"> Garlic
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" class="toppingSelect" value="Roma Tomatoes"> Roma Tomatoes
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" class="toppingSelect" value="Basil"> Basil
+                </label>
+              </div>
+            </div>
+            </div>
+            <div id="button">
+              <button type="submit" class="btn btn-success">Place your Order</button>
+            </div>
+          </form>
 
-      <div class="col-md-6">
-        <h3>Price:</h3>
+
+      <div class="col-xs-12">
+        <h3>Price for Each Pizza:</h3>
         <ul id="pizzaCost">
 
         </ul>
@@ -63,4 +76,9 @@
 
     </div>
   </body>
+  <div class="container">
+    <footer>
+      <p>&copy; 2016 Blake Scott</p>
+    </footer>
+  </div>
 </html>
